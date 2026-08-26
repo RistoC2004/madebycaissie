@@ -64,23 +64,23 @@ const hours = [
 
 export default function GrecosConcept() {
   return (
-    <main className="overflow-hidden bg-[#f4ead5] text-[#201a15]">
+    <main className="w-full overflow-x-hidden bg-[#f4ead5] text-[#201a15]">
       {/* Concept disclosure */}
-      <div className="bg-[#201a15] px-5 py-3 text-center text-[10px] font-bold uppercase tracking-[0.2em] text-[#f4ead5]/55">
+      <div className="bg-[#201a15] px-4 py-3 text-center text-[9px] font-bold uppercase leading-4 tracking-[0.17em] text-[#f4ead5]/55 sm:px-5 sm:text-[10px] sm:tracking-[0.2em]">
         Independent concept redesign by Made by Caissie — not affiliated with or
         commissioned by Greco&apos;s Pizza & George&apos;s Lounge
       </div>
 
       {/* Navigation */}
       <header className="relative z-20 border-b-2 border-[#201a15] bg-[#f4ead5]">
-        <div className="mx-auto flex max-w-[1500px] items-center justify-between px-5 py-5 sm:px-8 lg:px-12">
-          <a href="#top" className="group">
-            <div className="-rotate-2 border-2 border-[#201a15] bg-[#bd3526] px-4 py-2 text-[#f8e8be] shadow-[4px_4px_0_#201a15] transition group-hover:rotate-0">
-              <span className="block text-[9px] font-black uppercase tracking-[0.22em]">
+        <div className="mx-auto flex w-full max-w-[1500px] min-w-0 items-center justify-between gap-3 px-4 py-5 sm:px-8 lg:px-12">
+          <a href="#top" className="group shrink-0">
+            <div className="-rotate-2 border-2 border-[#201a15] bg-[#bd3526] px-3 py-2 text-[#f8e8be] shadow-[4px_4px_0_#201a15] transition group-hover:rotate-0 sm:px-4">
+              <span className="block text-[8px] font-black uppercase tracking-[0.2em] sm:text-[9px] sm:tracking-[0.22em]">
                 Calgary
               </span>
 
-              <span className="block font-serif text-2xl font-black italic leading-none tracking-[-0.05em]">
+              <span className="block font-serif text-xl font-black italic leading-none tracking-[-0.05em] sm:text-2xl">
                 Greco&apos;s
               </span>
             </div>
@@ -106,7 +106,7 @@ export default function GrecosConcept() {
 
           <a
             href="tel:4032424597"
-            className="bg-[#31533d] px-5 py-3 text-[10px] font-black uppercase tracking-[0.14em] text-[#fff5df] transition hover:bg-[#bd3526]"
+            className="shrink-0 bg-[#31533d] px-4 py-3 text-[9px] font-black uppercase tracking-[0.11em] text-[#fff5df] transition hover:bg-[#bd3526] sm:px-5 sm:text-[10px] sm:tracking-[0.14em]"
           >
             Call to Order
           </a>
@@ -123,38 +123,38 @@ export default function GrecosConcept() {
           <div className="absolute left-1/2 top-1/2 h-[1300px] w-[1300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[repeating-conic-gradient(from_0deg,#fff8e8_0deg_8deg,transparent_8deg_16deg)]" />
         </div>
 
-        <div className="relative mx-auto grid min-h-[760px] max-w-[1500px] border-x-2 border-[#201a15] lg:grid-cols-[0.92fr_1.08fr]">
+        <div className="relative mx-auto grid w-full max-w-[1500px] min-w-0 border-x-2 border-[#201a15] lg:min-h-[760px] lg:grid-cols-[0.92fr_1.08fr]">
           {/* Hero copy */}
-          <div className="flex flex-col justify-between border-b-2 border-[#201a15] p-6 sm:p-10 lg:border-b-0 lg:border-r-2 lg:p-12">
-            <div className="flex items-center justify-between text-[#f7dfb1]">
-              <span className="text-[10px] font-black uppercase tracking-[0.2em]">
+          <div className="min-w-0 border-b-2 border-[#201a15] p-5 sm:p-10 lg:flex lg:flex-col lg:justify-between lg:border-b-0 lg:border-r-2 lg:p-12">
+            <div className="flex min-w-0 flex-wrap items-center justify-between gap-3 text-[#f7dfb1]">
+              <span className="text-[9px] font-black uppercase tracking-[0.16em] sm:text-[10px] sm:tracking-[0.2em]">
                 17 Avenue SW · Calgary
               </span>
 
-              <span className="rounded-full border border-[#f7dfb1]/60 px-3 py-1 text-[9px] font-black uppercase tracking-[0.15em]">
+              <span className="shrink-0 rounded-full border border-[#f7dfb1]/60 px-3 py-1 text-[8px] font-black uppercase tracking-[0.12em] sm:text-[9px] sm:tracking-[0.15em]">
                 Family Owned
               </span>
             </div>
 
-            <div className="py-16">
-              <p className="mb-5 font-serif text-2xl font-black italic text-[#f8e8be] sm:text-3xl">
+            <div className="py-14 sm:py-16">
+              <p className="mb-4 max-w-[280px] font-serif text-2xl font-black italic leading-[1.05] text-[#f8e8be] sm:mb-5 sm:max-w-none sm:text-3xl">
                 Feeding the neighbourhood since
               </p>
 
-              <p className="font-serif text-[110px] font-black italic leading-[0.62] tracking-[-0.09em] text-[#201a15] sm:text-[150px] lg:text-[185px]">
+              <p className="font-serif text-[96px] font-black italic leading-[0.67] tracking-[-0.09em] text-[#201a15] sm:text-[150px] lg:text-[185px]">
                 19
                 <span className="text-[#f7dfb1]">68</span>
               </p>
 
-              <h1 className="mt-14 max-w-[780px] text-[49px] font-black uppercase leading-[0.82] tracking-[-0.065em] text-[#fff5df] sm:text-[66px] lg:text-[80px] xl:text-[94px]">
+              <h1 className="mt-12 min-w-0 max-w-full text-[39px] font-black uppercase leading-[0.85] tracking-[-0.055em] text-[#fff5df] sm:mt-14 sm:text-[66px] sm:leading-[0.82] sm:tracking-[-0.065em] lg:text-[80px] xl:text-[94px]">
                 Calgary&apos;s
                 <span className="block text-[#201a15]">Neighbourhood</span>
                 <span className="block">Pizza Joint.</span>
               </h1>
             </div>
 
-            <div className="grid gap-6 border-t-2 border-[#201a15]/60 pt-7 sm:grid-cols-[1fr_auto] sm:items-end">
-              <p className="max-w-md text-base font-medium leading-7 text-[#fff5df]/80">
+            <div className="grid min-w-0 gap-6 border-t-2 border-[#201a15]/60 pt-7 sm:grid-cols-[1fr_auto] sm:items-end">
+              <p className="min-w-0 max-w-md text-[15px] font-medium leading-7 text-[#fff5df]/80 sm:text-base">
                 Greek-style pizza. Big portions. Familiar faces. The kind of
                 place that doesn&apos;t need to reinvent itself every six
                 months.
@@ -162,7 +162,7 @@ export default function GrecosConcept() {
 
               <a
                 href="#tonight"
-                className="border-2 border-[#201a15] bg-[#f7dfb1] px-7 py-4 text-center text-[11px] font-black uppercase tracking-[0.14em] text-[#201a15] shadow-[5px_5px_0_#201a15] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
+                className="w-full border-2 border-[#201a15] bg-[#f7dfb1] px-6 py-4 text-center text-[10px] font-black uppercase tracking-[0.12em] text-[#201a15] shadow-[4px_4px_0_#201a15] transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none sm:w-auto sm:px-7 sm:text-[11px] sm:tracking-[0.14em]"
               >
                 Dinner&apos;s handled ↓
               </a>
@@ -170,10 +170,10 @@ export default function GrecosConcept() {
           </div>
 
           {/* Hero photography placeholder */}
-          <div className="relative min-h-[650px] overflow-hidden bg-[#e3d6bc]">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="max-w-sm px-8 text-center">
-                <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#bd3526]">
+          <div className="relative min-h-[620px] min-w-0 overflow-hidden bg-[#e3d6bc] sm:min-h-[650px]">
+            <div className="absolute inset-0 flex items-center justify-center px-5 pb-40 pt-28 sm:px-8 sm:pb-48 sm:pt-32">
+              <div className="max-w-sm text-center">
+                <p className="text-[9px] font-black uppercase tracking-[0.18em] text-[#bd3526] sm:text-[10px] sm:tracking-[0.2em]">
                   Greco&apos;s Photography
                 </p>
 
@@ -189,18 +189,18 @@ export default function GrecosConcept() {
             </div>
 
             {/* Retro badge */}
-            <div className="absolute right-6 top-6 flex h-32 w-32 rotate-6 items-center justify-center rounded-full border-4 border-[#f8e8be] bg-[#31533d] text-center shadow-[5px_5px_0_#201a15] sm:right-10 sm:top-10 sm:h-40 sm:w-40">
-              <p className="-rotate-6 text-[11px] font-black uppercase leading-5 tracking-[0.14em] text-[#f8e8be]">
+            <div className="absolute right-3 top-4 flex h-24 w-24 rotate-6 items-center justify-center rounded-full border-[3px] border-[#f8e8be] bg-[#31533d] text-center shadow-[4px_4px_0_#201a15] sm:right-10 sm:top-10 sm:h-40 sm:w-40 sm:border-4 sm:shadow-[5px_5px_0_#201a15]">
+              <p className="-rotate-6 text-[8px] font-black uppercase leading-4 tracking-[0.1em] text-[#f8e8be] sm:text-[11px] sm:leading-5 sm:tracking-[0.14em]">
                 Thick
-                <span className="block font-serif text-3xl italic tracking-[-0.04em]">
+                <span className="block font-serif text-xl italic tracking-[-0.04em] sm:text-3xl">
                   & Loaded
                 </span>
                 Calgary Style
               </p>
             </div>
 
-            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#201a15]/95 via-[#201a15]/70 to-transparent p-7 pt-36 sm:p-10 sm:pt-44 lg:p-12 lg:pt-48">
-              <p className="text-[10px] font-black uppercase tracking-[0.22em] text-[#f6d990]">
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#201a15]/95 via-[#201a15]/70 to-transparent p-6 pt-32 sm:p-10 sm:pt-44 lg:p-12 lg:pt-48">
+              <p className="text-[9px] font-black uppercase tracking-[0.18em] text-[#f6d990] sm:text-[10px] sm:tracking-[0.22em]">
                 No tiny portions here
               </p>
 
@@ -208,11 +208,11 @@ export default function GrecosConcept() {
                 Pizza made for the whole table.
               </p>
 
-              <div className="mt-7 flex flex-wrap gap-3">
+              <div className="mt-6 flex flex-wrap gap-2 sm:mt-7 sm:gap-3">
                 {["Dine In", "Takeout", "Delivery"].map((item) => (
                   <span
                     key={item}
-                    className="border border-white/40 bg-black/20 px-4 py-2 text-[9px] font-black uppercase tracking-[0.14em] text-white"
+                    className="border border-white/40 bg-black/20 px-3 py-2 text-[8px] font-black uppercase tracking-[0.12em] text-white sm:px-4 sm:text-[9px] sm:tracking-[0.14em]"
                   >
                     {item}
                   </span>
@@ -225,7 +225,7 @@ export default function GrecosConcept() {
 
       {/* Centered menu strip */}
       <section className="border-b-2 border-[#201a15] bg-[#f5d36e]">
-        <div className="mx-auto grid max-w-[1500px] grid-cols-2 border-x-2 border-[#201a15] sm:grid-cols-3 lg:grid-cols-6">
+        <div className="mx-auto grid w-full max-w-[1500px] min-w-0 grid-cols-2 border-x-2 border-[#201a15] sm:grid-cols-3 lg:grid-cols-6">
           {[
             "PIZZA",
             "PASTA",
@@ -236,19 +236,27 @@ export default function GrecosConcept() {
           ].map((item, index) => (
             <div
               key={item}
-              className={`flex items-center justify-center gap-3 px-3 py-5 text-center ${
+              className={`flex min-w-0 items-center justify-center gap-2 px-2 py-5 text-center ${
+                index % 2 === 0
+                  ? "border-r border-[#201a15]/15 sm:border-r-0"
+                  : ""
+              } ${index < 4 ? "border-b border-[#201a15]/15 sm:border-b-0" : ""} ${
                 index !== 5
                   ? "lg:border-r lg:border-[#201a15]/20"
                   : ""
               }`}
             >
-              <span className="text-sm text-[#bd3526]">★</span>
+              <span className="shrink-0 text-[10px] text-[#bd3526] sm:text-sm">
+                ★
+              </span>
 
-              <span className="text-base font-black uppercase tracking-[-0.04em] xl:text-lg">
+              <span className="min-w-0 text-[13px] font-black uppercase tracking-[-0.03em] sm:text-base xl:text-lg">
                 {item}
               </span>
 
-              <span className="text-sm text-[#bd3526]">★</span>
+              <span className="shrink-0 text-[10px] text-[#bd3526] sm:text-sm">
+                ★
+              </span>
             </div>
           ))}
         </div>
@@ -256,22 +264,22 @@ export default function GrecosConcept() {
 
       {/* Pizza anatomy */}
       <section id="pizza" className="bg-[#f4ead5]">
-        <div className="mx-auto max-w-[1500px] border-x-2 border-[#201a15] px-6 py-24 sm:px-10 lg:px-12 lg:py-28">
-          <div className="grid gap-14 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
-            <div>
-              <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#bd3526]">
+        <div className="mx-auto w-full max-w-[1500px] min-w-0 border-x-2 border-[#201a15] px-5 py-20 sm:px-10 sm:py-24 lg:px-12 lg:py-28">
+          <div className="grid min-w-0 gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-center lg:gap-14">
+            <div className="min-w-0">
+              <p className="text-[9px] font-black uppercase tracking-[0.18em] text-[#bd3526] sm:text-[10px] sm:tracking-[0.2em]">
                 The main event
               </p>
 
-              <h2 className="mt-5 font-serif text-6xl font-black italic leading-[0.82] tracking-[-0.065em] sm:text-7xl lg:text-8xl">
+              <h2 className="mt-5 font-serif text-[54px] font-black italic leading-[0.82] tracking-[-0.06em] sm:text-7xl lg:text-8xl">
                 The
-                <span className="block pl-[12%] text-[#bd3526]">
+                <span className="block pl-[10%] text-[#bd3526] sm:pl-[12%]">
                   Greco&apos;s
                 </span>
                 <span className="block">Pie.</span>
               </h2>
 
-              <p className="mt-8 max-w-md text-lg leading-8 text-black/60">
+              <p className="mt-8 max-w-md text-base leading-7 text-black/60 sm:text-lg sm:leading-8">
                 This isn&apos;t thin-crust minimalism. Greco&apos;s is known for
                 thick Greek-style pizza loaded with cheese and toppings — the
                 sort of pizza you remember the next day.
@@ -279,8 +287,8 @@ export default function GrecosConcept() {
             </div>
 
             {/* Illustrated pizza */}
-            <div className="relative mx-auto aspect-square w-full max-w-[620px]">
-              <div className="absolute inset-[6%] rounded-full border-[18px] border-[#b7763f] bg-[#dca461] shadow-[15px_18px_0_rgba(32,26,21,0.12)]">
+            <div className="relative mx-auto aspect-square w-full max-w-[350px] sm:max-w-[620px]">
+              <div className="absolute inset-[8%] rounded-full border-[12px] border-[#b7763f] bg-[#dca461] shadow-[10px_12px_0_rgba(32,26,21,0.12)] sm:inset-[6%] sm:border-[18px] sm:shadow-[15px_18px_0_rgba(32,26,21,0.12)]">
                 <div className="absolute inset-[7%] rounded-full bg-[#cf432f]">
                   <div className="absolute inset-[6%] rounded-full bg-[#f0c66e]">
                     {[
@@ -309,15 +317,15 @@ export default function GrecosConcept() {
                 </div>
               </div>
 
-              <div className="absolute -left-2 top-[10%] -rotate-6 border-2 border-[#201a15] bg-[#31533d] px-5 py-3 text-[10px] font-black uppercase tracking-[0.15em] text-[#fff5df] shadow-[4px_4px_0_#201a15]">
+              <div className="absolute left-0 top-[10%] -rotate-6 border-2 border-[#201a15] bg-[#31533d] px-3 py-2 text-[8px] font-black uppercase tracking-[0.1em] text-[#fff5df] shadow-[3px_3px_0_#201a15] sm:-left-2 sm:px-5 sm:py-3 sm:text-[10px] sm:tracking-[0.15em] sm:shadow-[4px_4px_0_#201a15]">
                 Loaded toppings
               </div>
 
-              <div className="absolute -right-3 top-[48%] rotate-5 border-2 border-[#201a15] bg-[#bd3526] px-5 py-3 text-[10px] font-black uppercase tracking-[0.15em] text-white shadow-[4px_4px_0_#201a15]">
+              <div className="absolute right-0 top-[49%] rotate-3 border-2 border-[#201a15] bg-[#bd3526] px-3 py-2 text-[8px] font-black uppercase tracking-[0.1em] text-white shadow-[3px_3px_0_#201a15] sm:-right-3 sm:rotate-5 sm:px-5 sm:py-3 sm:text-[10px] sm:tracking-[0.15em] sm:shadow-[4px_4px_0_#201a15]">
                 Plenty of cheese
               </div>
 
-              <div className="absolute bottom-[5%] left-[5%] rotate-2 border-2 border-[#201a15] bg-[#f5d36e] px-5 py-3 text-[10px] font-black uppercase tracking-[0.15em] shadow-[4px_4px_0_#201a15]">
+              <div className="absolute bottom-[4%] left-[4%] rotate-2 border-2 border-[#201a15] bg-[#f5d36e] px-3 py-2 text-[8px] font-black uppercase tracking-[0.1em] shadow-[3px_3px_0_#201a15] sm:bottom-[5%] sm:left-[5%] sm:px-5 sm:py-3 sm:text-[10px] sm:tracking-[0.15em] sm:shadow-[4px_4px_0_#201a15]">
                 Built for sharing
               </div>
             </div>
@@ -327,14 +335,14 @@ export default function GrecosConcept() {
 
       {/* Classics */}
       <section className="border-y-2 border-[#201a15] bg-[#31533d] text-[#fff6e3]">
-        <div className="mx-auto max-w-[1500px] border-x-2 border-[#201a15] px-6 py-24 sm:px-10 lg:px-12 lg:py-28">
-          <div className="mb-14 flex flex-col justify-between gap-8 md:flex-row md:items-end">
-            <div>
-              <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#f4ca63]">
+        <div className="mx-auto w-full max-w-[1500px] min-w-0 border-x-2 border-[#201a15] px-5 py-20 sm:px-10 sm:py-24 lg:px-12 lg:py-28">
+          <div className="mb-12 flex min-w-0 flex-col justify-between gap-8 sm:mb-14 md:flex-row md:items-end">
+            <div className="min-w-0">
+              <p className="text-[9px] font-black uppercase tracking-[0.18em] text-[#f4ca63] sm:text-[10px] sm:tracking-[0.2em]">
                 The classics
               </p>
 
-              <h2 className="mt-4 text-5xl font-black uppercase leading-[0.85] tracking-[-0.06em] sm:text-7xl">
+              <h2 className="mt-4 text-[48px] font-black uppercase leading-[0.86] tracking-[-0.055em] sm:text-7xl sm:leading-[0.85] sm:tracking-[-0.06em]">
                 Don&apos;t
                 <span className="block font-serif italic text-[#f4ca63]">
                   overthink it.
@@ -348,14 +356,14 @@ export default function GrecosConcept() {
             </p>
           </div>
 
-          <div className="grid gap-5 lg:grid-cols-3">
+          <div className="grid min-w-0 gap-5 lg:grid-cols-3">
             {classics.map((item) => (
               <article
                 key={item.title}
-                className="group border-2 border-[#f7dfb1]/50 bg-[#203829]"
+                className="group min-w-0 overflow-hidden border-2 border-[#f7dfb1]/50 bg-[#203829]"
               >
                 {/* Photo placeholder */}
-                <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden bg-[#d9c9aa]">
+                <div className="relative flex aspect-[4/3] min-w-0 items-center justify-center overflow-hidden bg-[#d9c9aa]">
                   <div className="max-w-[220px] px-6 text-center">
                     <p className="text-[9px] font-black uppercase tracking-[0.18em] text-[#bd3526]">
                       Greco&apos;s Photography
@@ -371,7 +379,7 @@ export default function GrecosConcept() {
                   </div>
                 </div>
 
-                <div className="p-7">
+                <div className="p-6 sm:p-7">
                   <p className="text-[9px] font-black uppercase tracking-[0.17em] text-[#f4ca63]">
                     {item.kicker}
                   </p>
@@ -392,30 +400,30 @@ export default function GrecosConcept() {
 
       {/* More than pizza */}
       <section id="menu" className="bg-[#f4ead5]">
-        <div className="mx-auto max-w-[1500px] border-x-2 border-[#201a15] px-6 py-24 sm:px-10 lg:px-12 lg:py-28">
-          <div className="grid gap-14 lg:grid-cols-[0.75fr_1.25fr]">
-            <div>
-              <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#bd3526]">
+        <div className="mx-auto w-full max-w-[1500px] min-w-0 border-x-2 border-[#201a15] px-5 py-20 sm:px-10 sm:py-24 lg:px-12 lg:py-28">
+          <div className="grid min-w-0 gap-12 lg:grid-cols-[0.75fr_1.25fr] lg:gap-14">
+            <div className="min-w-0">
+              <p className="text-[9px] font-black uppercase tracking-[0.18em] text-[#bd3526] sm:text-[10px] sm:tracking-[0.2em]">
                 More than pizza
               </p>
 
-              <h2 className="mt-5 text-6xl font-black uppercase leading-[0.83] tracking-[-0.065em] sm:text-7xl">
+              <h2 className="mt-5 text-[52px] font-black uppercase leading-[0.85] tracking-[-0.06em] sm:text-7xl sm:leading-[0.83] sm:tracking-[-0.065em]">
                 Come
                 <span className="block text-[#31533d]">hungry.</span>
               </h2>
 
-              <p className="mt-8 max-w-md text-lg leading-8 text-black/55">
+              <p className="mt-8 max-w-md text-base leading-7 text-black/55 sm:text-lg sm:leading-8">
                 Pizza may be the headline, but the menu has always gone much
                 further — Greek favourites, Italian comfort food, pasta,
                 calamari, salads and hearty dinner plates.
               </p>
             </div>
 
-            <div className="border-t-2 border-[#201a15]">
+            <div className="min-w-0 border-t-2 border-[#201a15]">
               {moreThanPizza.map((category) => (
                 <div
                   key={category.title}
-                  className="grid gap-5 border-b-2 border-[#201a15] py-8 sm:grid-cols-[70px_0.7fr_1.3fr] sm:items-center"
+                  className="grid min-w-0 gap-4 border-b-2 border-[#201a15] py-7 sm:grid-cols-[70px_0.7fr_1.3fr] sm:items-center sm:gap-5 sm:py-8"
                 >
                   <span className="text-[10px] font-black tracking-[0.18em] text-[#bd3526]">
                     {category.number}
@@ -425,14 +433,14 @@ export default function GrecosConcept() {
                     {category.title}
                   </h3>
 
-                  <p className="text-sm font-bold uppercase leading-6 tracking-[0.08em] text-black/45">
+                  <p className="min-w-0 text-sm font-bold uppercase leading-6 tracking-[0.06em] text-black/45 sm:tracking-[0.08em]">
                     {category.items}
                   </p>
                 </div>
               ))}
 
-              <div className="mt-8 flex flex-col justify-between gap-5 bg-[#f5d36e] p-7 sm:flex-row sm:items-center">
-                <div>
+              <div className="mt-8 flex min-w-0 flex-col justify-between gap-5 bg-[#f5d36e] p-6 sm:flex-row sm:items-center sm:p-7">
+                <div className="min-w-0">
                   <p className="text-[9px] font-black uppercase tracking-[0.17em] text-[#bd3526]">
                     Hungry yet?
                   </p>
@@ -463,12 +471,12 @@ export default function GrecosConcept() {
           <div className="h-full w-full bg-[linear-gradient(90deg,transparent_49%,white_50%,transparent_51%)] bg-[size:70px_70px]" />
         </div>
 
-        <div className="relative mx-auto grid min-h-[720px] max-w-[1500px] border-x-2 border-[#201a15] lg:grid-cols-[0.95fr_1.05fr]">
+        <div className="relative mx-auto grid w-full max-w-[1500px] min-w-0 border-x-2 border-[#201a15] lg:min-h-[720px] lg:grid-cols-[0.95fr_1.05fr]">
           {/* Lounge photography placeholder */}
-          <div className="relative min-h-[600px] border-b-2 border-[#201a15] bg-[#25352b] lg:border-b-0 lg:border-r-2">
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="max-w-sm px-8 text-center">
-                <p className="text-[10px] font-black uppercase tracking-[0.22em] text-[#d8b95f]">
+          <div className="relative min-h-[600px] min-w-0 border-b-2 border-[#201a15] bg-[#25352b] lg:border-b-0 lg:border-r-2">
+            <div className="absolute inset-0 flex items-center justify-center px-5 pb-48 pt-24">
+              <div className="max-w-sm text-center">
+                <p className="text-[9px] font-black uppercase tracking-[0.18em] text-[#d8b95f] sm:text-[10px] sm:tracking-[0.22em]">
                   George&apos;s Lounge
                 </p>
 
@@ -483,12 +491,12 @@ export default function GrecosConcept() {
               </div>
             </div>
 
-            <div className="absolute left-8 top-8 border border-[#e5c677]/50 bg-black/20 px-4 py-2 text-[9px] font-black uppercase tracking-[0.2em] text-[#e5c677]">
+            <div className="absolute left-5 top-6 border border-[#e5c677]/50 bg-black/20 px-3 py-2 text-[8px] font-black uppercase tracking-[0.16em] text-[#e5c677] sm:left-8 sm:top-8 sm:px-4 sm:text-[9px] sm:tracking-[0.2em]">
               The other half of Greco&apos;s
             </div>
 
-            <div className="absolute bottom-8 left-8 right-8 border-t border-white/20 pt-6 sm:bottom-12 sm:left-12 sm:right-12">
-              <p className="max-w-xl font-serif text-5xl font-black italic leading-[0.93] tracking-[-0.05em] text-white sm:text-6xl">
+            <div className="absolute bottom-8 left-5 right-5 border-t border-white/20 pt-6 sm:bottom-12 sm:left-12 sm:right-12">
+              <p className="max-w-xl font-serif text-[43px] font-black italic leading-[0.93] tracking-[-0.05em] text-white sm:text-6xl">
                 Booths.
                 <span className="block text-[#d8b95f]">Cold drinks.</span>
                 <span className="block">The game on.</span>
@@ -496,44 +504,44 @@ export default function GrecosConcept() {
             </div>
           </div>
 
-          <div className="flex items-center p-8 sm:p-12 lg:p-16">
-            <div>
-              <p className="text-[10px] font-black uppercase tracking-[0.24em] text-[#d8b95f]">
+          <div className="flex min-w-0 items-center p-6 sm:p-12 lg:p-16">
+            <div className="min-w-0">
+              <p className="text-[9px] font-black uppercase tracking-[0.2em] text-[#d8b95f] sm:text-[10px] sm:tracking-[0.24em]">
                 Welcome to
               </p>
 
-              <h2 className="mt-5 text-6xl font-black uppercase leading-[0.8] tracking-[-0.07em] sm:text-7xl lg:text-8xl">
+              <h2 className="mt-5 max-w-full text-[49px] font-black uppercase leading-[0.84] tracking-[-0.055em] sm:text-7xl sm:leading-[0.8] sm:tracking-[-0.07em] lg:text-8xl">
                 George&apos;s
                 <span className="block font-serif italic text-[#d8b95f]">
                   Lounge.
                 </span>
               </h2>
 
-              <p className="mt-10 max-w-xl text-lg leading-8 text-white/55">
+              <p className="mt-9 max-w-xl text-base leading-7 text-white/55 sm:mt-10 sm:text-lg sm:leading-8">
                 No velvet ropes. No twelve-dollar garnish. Just an old-school
                 neighbourhood lounge with comfortable booths, cold drinks,
                 televisions and a reason to stay after dinner.
               </p>
 
-              <div className="mt-12 grid gap-px bg-white/15 sm:grid-cols-3">
+              <div className="mt-10 grid min-w-0 gap-px bg-white/15 sm:mt-12 sm:grid-cols-3">
                 {[
                   ["01", "Grab a booth"],
                   ["02", "Order some food"],
                   ["03", "Stay awhile"],
                 ].map(([number, text]) => (
-                  <div key={number} className="bg-[#1e2a22] p-6">
+                  <div key={number} className="min-w-0 bg-[#1e2a22] p-5 sm:p-6">
                     <p className="text-[9px] font-black tracking-[0.15em] text-[#d8b95f]">
                       {number}
                     </p>
 
-                    <p className="mt-8 text-sm font-black uppercase tracking-[0.06em]">
+                    <p className="mt-6 text-sm font-black uppercase tracking-[0.05em] sm:mt-8 sm:tracking-[0.06em]">
                       {text}
                     </p>
                   </div>
                 ))}
               </div>
 
-              <p className="mt-10 border-l-2 border-[#d8b95f] pl-5 font-serif text-2xl italic leading-8 text-white/75">
+              <p className="mt-9 border-l-2 border-[#d8b95f] pl-5 font-serif text-2xl italic leading-8 text-white/75 sm:mt-10">
                 Not trying to be trendy.
                 <br />
                 That&apos;s kind of the point.
@@ -545,40 +553,40 @@ export default function GrecosConcept() {
 
       {/* History */}
       <section id="story" className="bg-[#bd3526] text-[#fff4dc]">
-        <div className="mx-auto max-w-[1500px] border-x-2 border-[#201a15] px-6 py-24 sm:px-10 lg:px-12 lg:py-32">
-          <div className="grid gap-14 lg:grid-cols-[0.65fr_1.35fr]">
+        <div className="mx-auto w-full max-w-[1500px] min-w-0 border-x-2 border-[#201a15] px-5 py-20 sm:px-10 sm:py-24 lg:px-12 lg:py-32">
+          <div className="grid min-w-0 gap-12 lg:grid-cols-[0.65fr_1.35fr] lg:gap-14">
             <div>
-              <div className="inline-block -rotate-3 border-2 border-[#201a15] bg-[#f5d36e] px-6 py-4 text-[#201a15] shadow-[5px_5px_0_#201a15]">
-                <p className="text-[9px] font-black uppercase tracking-[0.2em]">
+              <div className="inline-block -rotate-3 border-2 border-[#201a15] bg-[#f5d36e] px-5 py-4 text-[#201a15] shadow-[4px_4px_0_#201a15] sm:px-6 sm:shadow-[5px_5px_0_#201a15]">
+                <p className="text-[8px] font-black uppercase tracking-[0.18em] sm:text-[9px] sm:tracking-[0.2em]">
                   Established
                 </p>
 
-                <p className="font-serif text-6xl font-black italic leading-none tracking-[-0.08em]">
+                <p className="font-serif text-5xl font-black italic leading-none tracking-[-0.08em] sm:text-6xl">
                   1968
                 </p>
               </div>
             </div>
 
-            <div>
-              <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#f5d36e]">
+            <div className="min-w-0">
+              <p className="text-[9px] font-black uppercase tracking-[0.18em] text-[#f5d36e] sm:text-[10px] sm:tracking-[0.2em]">
                 Killarney · Calgary
               </p>
 
-              <h2 className="mt-6 max-w-5xl text-5xl font-black uppercase leading-[0.86] tracking-[-0.065em] sm:text-6xl lg:text-8xl">
+              <h2 className="mt-6 max-w-full text-[39px] font-black uppercase leading-[0.87] tracking-[-0.05em] sm:text-6xl sm:leading-[0.86] sm:tracking-[-0.065em] lg:text-8xl">
                 Same neighbourhood.
                 <span className="block font-serif italic text-[#f5d36e]">
                   Same kind of pizza.
                 </span>
               </h2>
 
-              <div className="mt-12 grid gap-8 border-t border-[#fff4dc]/35 pt-8 md:grid-cols-2">
-                <p className="max-w-lg text-lg leading-8 text-white/70">
+              <div className="mt-10 grid min-w-0 gap-7 border-t border-[#fff4dc]/35 pt-8 sm:mt-12 sm:gap-8 md:grid-cols-2">
+                <p className="min-w-0 max-w-lg text-base leading-7 text-white/70 sm:text-lg sm:leading-8">
                   Greco&apos;s has been part of Calgary&apos;s Killarney
                   neighbourhood since 1968 — family-owned and feeding generations
                   of customers from 17 Avenue SW.
                 </p>
 
-                <p className="max-w-lg text-lg leading-8 text-white/70">
+                <p className="min-w-0 max-w-lg text-base leading-7 text-white/70 sm:text-lg sm:leading-8">
                   A new website shouldn&apos;t erase that history. It should make
                   the history the reason somebody wants to visit.
                 </p>
@@ -586,7 +594,7 @@ export default function GrecosConcept() {
             </div>
           </div>
 
-          <div className="mt-20 border-y-2 border-[#fff4dc]/35 py-8">
+          <div className="mt-16 border-y-2 border-[#fff4dc]/35 py-8 sm:mt-20">
             <div className="grid gap-8 text-center sm:grid-cols-3">
               <div>
                 <p className="font-serif text-5xl font-black italic text-[#f5d36e]">
@@ -624,14 +632,14 @@ export default function GrecosConcept() {
 
       {/* Dinner CTA */}
       <section id="tonight" className="bg-[#f5d36e]">
-        <div className="mx-auto max-w-[1500px] border-x-2 border-[#201a15] px-6 py-24 sm:px-10 lg:px-12 lg:py-28">
-          <div className="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
-            <div>
-              <p className="text-[10px] font-black uppercase tracking-[0.22em] text-[#bd3526]">
+        <div className="mx-auto w-full max-w-[1500px] min-w-0 border-x-2 border-[#201a15] px-5 py-20 sm:px-10 sm:py-24 lg:px-12 lg:py-28">
+          <div className="grid min-w-0 gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end lg:gap-12">
+            <div className="min-w-0">
+              <p className="text-[9px] font-black uppercase tracking-[0.2em] text-[#bd3526] sm:text-[10px] sm:tracking-[0.22em]">
                 Tonight
               </p>
 
-              <h2 className="mt-5 text-[58px] font-black uppercase leading-[0.78] tracking-[-0.075em] sm:text-[78px] lg:text-[104px]">
+              <h2 className="mt-5 max-w-full text-[52px] font-black uppercase leading-[0.8] tracking-[-0.065em] sm:text-[78px] sm:leading-[0.78] sm:tracking-[-0.075em] lg:text-[104px]">
                 Dinner
                 <span className="block font-serif italic text-[#bd3526]">
                   is handled.
@@ -639,30 +647,30 @@ export default function GrecosConcept() {
               </h2>
             </div>
 
-            <div>
-              <p className="max-w-xl text-lg leading-8 text-black/60">
+            <div className="min-w-0">
+              <p className="max-w-xl text-base leading-7 text-black/60 sm:text-lg sm:leading-8">
                 Sit down at the restaurant, pick it up on your way home, or have
                 it delivered. Either way, nobody has to cook.
               </p>
 
-              <div className="mt-8 grid gap-3 sm:grid-cols-3">
+              <div className="mt-8 grid min-w-0 gap-3 sm:grid-cols-3">
                 <a
                   href="#visit"
-                  className="border-2 border-[#201a15] bg-[#f4ead5] px-5 py-5 text-center text-[10px] font-black uppercase tracking-[0.14em] transition hover:bg-[#201a15] hover:text-white"
+                  className="border-2 border-[#201a15] bg-[#f4ead5] px-4 py-5 text-center text-[9px] font-black uppercase tracking-[0.12em] transition hover:bg-[#201a15] hover:text-white sm:px-5 sm:text-[10px] sm:tracking-[0.14em]"
                 >
                   Dine In
                 </a>
 
                 <a
                   href="tel:4032424597"
-                  className="border-2 border-[#201a15] bg-[#bd3526] px-5 py-5 text-center text-[10px] font-black uppercase tracking-[0.14em] text-white transition hover:bg-[#201a15]"
+                  className="border-2 border-[#201a15] bg-[#bd3526] px-4 py-5 text-center text-[9px] font-black uppercase tracking-[0.12em] text-white transition hover:bg-[#201a15] sm:px-5 sm:text-[10px] sm:tracking-[0.14em]"
                 >
                   Call for Pickup
                 </a>
 
                 <a
                   href="#visit"
-                  className="border-2 border-[#201a15] bg-[#31533d] px-5 py-5 text-center text-[10px] font-black uppercase tracking-[0.14em] text-white transition hover:bg-[#201a15]"
+                  className="border-2 border-[#201a15] bg-[#31533d] px-4 py-5 text-center text-[9px] font-black uppercase tracking-[0.12em] text-white transition hover:bg-[#201a15] sm:px-5 sm:text-[10px] sm:tracking-[0.14em]"
                 >
                   Delivery
                 </a>
@@ -677,18 +685,18 @@ export default function GrecosConcept() {
         id="visit"
         className="border-y-2 border-[#201a15] bg-[#f4ead5]"
       >
-        <div className="mx-auto grid max-w-[1500px] border-x-2 border-[#201a15] lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="border-b-2 border-[#201a15] p-8 sm:p-12 lg:border-b-0 lg:border-r-2 lg:p-16">
-            <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#bd3526]">
+        <div className="mx-auto grid w-full max-w-[1500px] min-w-0 border-x-2 border-[#201a15] lg:grid-cols-[0.9fr_1.1fr]">
+          <div className="min-w-0 border-b-2 border-[#201a15] p-6 sm:p-12 lg:border-b-0 lg:border-r-2 lg:p-16">
+            <p className="text-[9px] font-black uppercase tracking-[0.18em] text-[#bd3526] sm:text-[10px] sm:tracking-[0.2em]">
               Find us
             </p>
 
-            <h2 className="mt-5 font-serif text-6xl font-black italic leading-[0.9] tracking-[-0.06em]">
+            <h2 className="mt-5 max-w-full font-serif text-[52px] font-black italic leading-[0.9] tracking-[-0.055em] sm:text-6xl sm:tracking-[-0.06em]">
               3511
               <span className="block">17 Ave SW.</span>
             </h2>
 
-            <p className="mt-7 text-lg text-black/55">
+            <p className="mt-7 text-base leading-7 text-black/55 sm:text-lg">
               Calgary, Alberta
               <br />
               Killarney / Glengarry
@@ -696,21 +704,21 @@ export default function GrecosConcept() {
 
             <a
               href="tel:4032424597"
-              className="mt-10 inline-block text-3xl font-black tracking-[-0.04em] text-[#31533d]"
+              className="mt-10 inline-block max-w-full text-[28px] font-black tracking-[-0.04em] text-[#31533d] sm:text-3xl"
             >
               403-242-4597
             </a>
 
-            <p className="mt-3 text-[10px] font-black uppercase tracking-[0.15em] text-black/35">
+            <p className="mt-3 text-[9px] font-black uppercase tracking-[0.13em] text-black/35 sm:text-[10px] sm:tracking-[0.15em]">
               Call ahead for takeout
             </p>
 
-            <div className="mt-12 border-2 border-[#201a15] bg-[#bd3526] p-6 text-[#fff4dc] shadow-[6px_6px_0_#201a15]">
-              <p className="text-[9px] font-black uppercase tracking-[0.2em] text-[#f5d36e]">
+            <div className="mt-10 min-w-0 border-2 border-[#201a15] bg-[#bd3526] p-5 text-[#fff4dc] shadow-[5px_5px_0_#201a15] sm:mt-12 sm:p-6 sm:shadow-[6px_6px_0_#201a15]">
+              <p className="text-[8px] font-black uppercase tracking-[0.18em] text-[#f5d36e] sm:text-[9px] sm:tracking-[0.2em]">
                 Greco&apos;s + George&apos;s
               </p>
 
-              <p className="mt-3 font-serif text-3xl font-black italic">
+              <p className="mt-3 font-serif text-[28px] font-black italic leading-[1.05] sm:text-3xl">
                 One address.
                 <br />
                 Two neighbourhood institutions.
@@ -718,8 +726,8 @@ export default function GrecosConcept() {
             </div>
           </div>
 
-          <div className="p-8 sm:p-12 lg:p-16">
-            <p className="text-[10px] font-black uppercase tracking-[0.2em] text-[#bd3526]">
+          <div className="min-w-0 p-6 sm:p-12 lg:p-16">
+            <p className="text-[9px] font-black uppercase tracking-[0.18em] text-[#bd3526] sm:text-[10px] sm:tracking-[0.2em]">
               Restaurant hours
             </p>
 
@@ -727,13 +735,13 @@ export default function GrecosConcept() {
               {hours.map(([day, time]) => (
                 <div
                   key={day}
-                  className="flex items-center justify-between border-b border-[#201a15]/25 py-4"
+                  className="flex min-w-0 items-center justify-between gap-3 border-b border-[#201a15]/25 py-4"
                 >
-                  <span className="font-serif text-xl font-black italic">
+                  <span className="min-w-0 font-serif text-lg font-black italic sm:text-xl">
                     {day}
                   </span>
 
-                  <span className="text-xs font-black uppercase tracking-[0.08em] text-black/50">
+                  <span className="shrink-0 text-right text-[10px] font-black uppercase tracking-[0.05em] text-black/50 sm:text-xs sm:tracking-[0.08em]">
                     {time}
                   </span>
                 </div>
@@ -750,14 +758,14 @@ export default function GrecosConcept() {
 
       {/* Footer */}
       <footer className="bg-[#201a15] text-[#f4ead5]">
-        <div className="mx-auto max-w-[1500px] px-6 py-12 sm:px-10 lg:px-12">
-          <div className="flex flex-col justify-between gap-10 md:flex-row md:items-end">
-            <div>
+        <div className="mx-auto w-full max-w-[1500px] min-w-0 px-5 py-12 sm:px-10 lg:px-12">
+          <div className="flex min-w-0 flex-col justify-between gap-10 md:flex-row md:items-end">
+            <div className="min-w-0">
               <p className="font-serif text-5xl font-black italic tracking-[-0.06em]">
                 Greco&apos;s
               </p>
 
-              <p className="mt-1 text-[11px] font-black uppercase tracking-[0.18em] text-[#f5d36e]">
+              <p className="mt-1 text-[10px] font-black uppercase tracking-[0.15em] text-[#f5d36e] sm:text-[11px] sm:tracking-[0.18em]">
                 Pizza & George&apos;s Lounge
               </p>
 
@@ -773,7 +781,7 @@ export default function GrecosConcept() {
             </div>
           </div>
 
-          <div className="mt-12 flex flex-col justify-between gap-4 border-t border-white/10 pt-6 text-[10px] text-white/30 sm:flex-row">
+          <div className="mt-12 flex min-w-0 flex-col justify-between gap-4 border-t border-white/10 pt-6 text-[10px] leading-5 text-white/30 sm:flex-row">
             <span>
               Concept redesign only — not an official Greco&apos;s Pizza or
               George&apos;s Lounge website.
@@ -781,7 +789,7 @@ export default function GrecosConcept() {
 
             <a
               href="/"
-              className="font-black uppercase tracking-[0.13em] text-[#f5d36e]/65 transition hover:text-[#f5d36e]"
+              className="shrink-0 font-black uppercase tracking-[0.13em] text-[#f5d36e]/65 transition hover:text-[#f5d36e]"
             >
               Made by Caissie ↗
             </a>
